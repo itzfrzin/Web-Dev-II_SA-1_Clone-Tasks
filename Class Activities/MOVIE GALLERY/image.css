@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+}
+h1{
+    color: lightblue;
+    text-shadow: 2px 2px blue;
+    text-align: center;
+    font-style: italic;
+}
+.photos{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    flex-wrap: wrap;
+    gap: 25px;
+    animation: backwards;
+}
+.photos1{
+    display: flex;
+    justify-content: center;
+    margin: 7%;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+img{
+    transition: transform 0.5s;
+}
+.photos img:hover{
+    transform: scale(1.1);
+}
+.photos1 img:hover{
+    transform: scale(1.1);
+}

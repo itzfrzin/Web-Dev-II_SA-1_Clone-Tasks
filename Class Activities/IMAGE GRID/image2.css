@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background: black;
+}
+.Header{
+    text-align: center;
+    padding: 32px;
+}
+.Header h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    color: aliceblue;
+}
+.Row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 100px 100px 100px;
+}
+.Column{
+    flex: 25%;
+    max-width: 25%;
+}
+.IMG-HOVER{
+    height: auto;
+    overflow: hidden;
+    border: 5px solid white;
+}
+.IMG-HOVER img{
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: transform .5s ease;
+}
+.IMG-HOVER:hover img{
+    transform: scale(1.5);
+}
+
+@media screen and (max-width: 800px){
+    .Column{
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 500px){
+    .Column{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
